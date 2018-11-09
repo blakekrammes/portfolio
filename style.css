@@ -238,6 +238,37 @@ li {
 	text-decoration: none;
 }
 
+footer > a {
+  position: relative;
+  /*color: #000;*/
+  text-decoration: none;
+}
+
+footer > a:hover {
+  color: white;
+}
+
+footer > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: .7vw;
+  left: 0;
+  background-color: rgba(0,0,0,.6);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+footer > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .top-link {
   color: white;
   text-decoration: none;
@@ -245,12 +276,14 @@ li {
   margin-top: 1%;
   padding-top: 1vw;
   font-size: 5vw;
-  transition: .1s;
+  transition: .2s ease-out;
 }
 
 .top-link:hover {
   color: rgba(255,255,255,.4);
   transition: .1s;
+  /*text-decoration: underline;*/
+  transition: .2s ease-in;
 }
 
 .about-section-title {
@@ -302,9 +335,15 @@ li {
 }
 
 @media only screen and (min-width: 320px) {
-  .top-link {
-    font-size: 5vw;
-  }
+	.title {
+		margin-left: 11%;
+	}
+	.navbar {
+		margin-right: 6.5%;
+	}
+	.top-link {
+		font-size: 5vw;
+	}
 }
 
 @media only screen and (min-width: 450px) {
@@ -329,6 +368,9 @@ li {
 	.about-par {
 		font-size: 1rem;
 		line-height: 1.4rem;
+	}
+	footer > a:before {
+		bottom: .8vw;
 	}
 }
 
@@ -392,7 +434,12 @@ li {
 	}
 
 	.navbar {
-		margin-right: 0;
+		margin-right: 3%;
+		margin-left: 4%;
+	}
+
+	.title {
+		margin-right: 7%;
 	}
 
 	.img-div {
@@ -496,6 +543,10 @@ li {
 	}
 	.top-link {
 		font-size: 3vw;
+	}
+	/*top-link hover effect*/
+	footer > a:before {
+		bottom: 3.6vw;
 	}
 	.responsive-img-about {
 		max-width: 10vw;
@@ -708,6 +759,10 @@ li {
     	font-size: 2vw;
     	margin-top: 3%;
   	}
+  	/*top-link hover effect*/
+	footer > a:before {
+		bottom: 3.1vw;
+	}
 }
 
 @-moz-keyframes bounce {
