@@ -30,8 +30,6 @@
       <div class="arrow bounce"><a href="#projects" class="arrow-link"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a></div>
       <section id="projects" class="projects" role="region">
         <h2 class="section-title">Projects</h2>
-        <div class="path-div">
-        </div>
         <div class="img-div">
           <div class="project-description-div">
             <h2 class="project-description-title notator-description-title">Notator</h2>
@@ -48,7 +46,9 @@
             </div>
           </div>
           <div class="flex-positioner-div">
-            <img class="responsive-img notator-img" src="notator.png" alt="notator site image" />
+            <a class="project-img-link" href="https://notator.herokuapp.com/" target="_blank">
+              <img class="responsive-img notator-img" src="notator.png" alt="notator site image" />
+            </a>
             <div class="logo-div logo-div1">
               <div class="logo-div-sub git-div">
                 <!-- <img class="git-img" src="git.png" /> -->
@@ -84,7 +84,9 @@
             </div> 
           </div>
           <div class="flex-positioner-div">
-            <img class="responsive-img notator-img" src="scoresearch.png" alt="score search site image" />
+            <a class="project-img-link" href="https://scoresearch.herokuapp.com/" target="_blank">
+              <img class="responsive-img notator-img" src="scoresearch.png" alt="score search site image" />
+            </a>
             <div class="logo-div logo-div2">
               <div class="logo-div-sub git-div">
                 <a class="link-button" href="https://github.com/Blakesters/ScoreSearch" target="_blank"> 
@@ -103,7 +105,7 @@
           <div class="project-description-div">
             <h2 class="project-description-title gitapiary-description-title">Git Apiary</h2>
             <p class="project-description gitapiary-description">
-              Git Apiary is an application that enables you to simultaneously search a list of public APIs, GitHub and YouTube
+              Git Apiary is an application that enables you to simultaneously search for public APIs and related resources on GitHub and YouTube
             </p>
             <div class="dev-div"> 
               <i class="fab fa-html5"></i>
@@ -112,7 +114,9 @@
             </div> 
           </div>
           <div class="flex-positioner-div">
-            <img class="responsive-img notator-img" src="gitapiary.png" alt="git-apiary site image" />
+            <a class="project-img-link" href="https://blakesters.github.io/git-apiary/" target="_blank">
+              <img class="responsive-img notator-img" src="gitapiary.png" alt="git-apiary site image" />
+            </a>
             <div class="logo-div logo-div3">
               <div class="logo-div-sub git-div">
                 <a class="link-button" href="https://github.com/Blakesters/git-apiary" target="_blank">
@@ -130,25 +134,27 @@
       </section>
       <section id="about" class="about-div" role="region">
         <h2 class="section-title about-section-title">About</h2>
-          <div class="padding-div">
-            <img class="responsive-img-about profile-photo" src="blake.png" alt="Blake's profile picture"/>
-          </div>
-          <div class="about-content-div">
-            <ul class="about-content">
-              <li class="about-li"><p>
-                Blake is a software developer, classical pianist and composer whose music has been featured at the Oregon Bach Festival Composers Symposium
+          <div class="about-flex-positioner">
+            <div class="padding-div">
+              <img class="responsive-img-about profile-photo" src="blake.jpg" alt="Blake's profile picture"/>
+            </div>
+            <div class="about-content-div">
+              <div class="about-content">
+                <p class="about-par">
+                  Blake is a software developer, classical pianist and composer whose music has been featured at the Oregon Bach Festival Composers Symposium
+                  </p>
+                
+                <p class="about-par">
+                  He enjoys building engaging creative tools for the web using the Web Audio API and WebRTC
                 </p>
-              </li> 
-              <li class="about-li"><p>
-                He enjoys building engaging creative tools for the web using the Web Audio API and WebRTC
-              </p></li> 
-              <li class="about-li"><p>
-                He wants to work with other developers to build simple and intuitive software that solves real problems
-              </p></li>
-              <li class="about-li"><p>
-                Some things that are particularly meaningful to Blake include the music of Arvo Pärt, The Brothers Karamazov by Fyodor Dostoevsky, and the works of J.R.R. Tolkien
-              </p></li> 
-            </ul>
+                <p class="about-par">
+                  He wants to work with other developers to build simple and intuitive software
+                </p>
+                <p class="about-par">
+                  Some things that are particularly meaningful to Blake include the music of Arvo Pärt, The Brothers Karamazov by Fyodor Dostoevsky, and the works of J.R.R. Tolkien
+                </p>
+              </div>
+            </div>
           </div>
         </section>
     </main>
