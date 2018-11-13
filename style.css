@@ -3,7 +3,7 @@
 
 body {
   background: url('miro.jpg'); 
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: 2% 0;
   /*background-size: cover;*/
   background-color: #3C6E8F;
@@ -57,7 +57,7 @@ a {
 
 .home-header {
 	background: url('blaue.jpg');
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-size: cover;
 }
 
@@ -373,7 +373,7 @@ footer > a:hover:before {
 	position: absolute;
 	top: 18%;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	height: 100%;
 	width: 100vw;
 }
@@ -715,7 +715,7 @@ footer > a:hover:before {
 
 @media only screen  and (min-width: 768px) {
 	body {
-		background-repeat: no-repeat;
+		background-repeat: repeat-y;
 		background-position: 0 -40%;
 	}
 	.section-title {
@@ -1036,7 +1036,7 @@ footer > a:hover:before {
 @media only screen and (min-width: 1150px) {
 	body {
 		/*background-repeat: no-repeat;*/
-		background-position: 0 -370%;
+		background-position: 0 -320%;
 	}
 	.about-section-title {
 		line-height: 3rem;
@@ -1047,7 +1047,7 @@ footer > a:hover:before {
 @media only screen  and (min-width: 1224px) {
 	body {
 		/*background-repeat: no-repeat;*/
-		background-position: 0 -100%;
+		background-position: 0 -3000%;
 	}
 	.home-header {
     	background: url('https://emanatingjoy.files.wordpress.com/2014/12/der-weg-ins-blaue.jpg');
@@ -1330,6 +1330,10 @@ footer > a:hover:before {
 }
 
 @media only screen  and (min-width: 1300px) {
+	body {
+		/*background-repeat: no-repeat;*/
+		background-position: 0 -4650%;
+	}
 	/*.about-section-title-div {
 		line-height: 3.5rem;
 	}*/
@@ -1347,21 +1351,42 @@ footer > a:hover:before {
 		line-height: 1.4rem;
 	}
 }
-@media only screen  and (min-width: 1350px) {
+
+@media only screen  and (min-width: 1318px) {
 	body {
 			/*background-repeat: no-repeat;*/
-			background-position: 0 -130%;
+			background-position: 0 -4730%;
 		}
 }
 
+@media only screen  and (min-width: 1345px) {
+	body {
+			/*background-repeat: no-repeat;*/
+			background-position: 0 -4800%;
+		}
+}
+
+@media only screen  and (min-width: 1386px) {
+	body {
+			/*background-repeat: no-repeat;*/
+			background-position: 0 -4900%;
+		}
+}
+
+
+
 @media only screen  and (min-width: 1400px) {
+	body {
+			/*background-repeat: no-repeat;*/
+			background-position: 0 -1640%;
+		}
 	.profile-photo {
 		max-width: 14rem;
 		margin-left: 12.4rem; 
 	}
 	.about-par {
 		font-size: 1.19rem;
-		line-height: 1.5rem;
+		line-height: 1.45rem;
 	}
 }
 
