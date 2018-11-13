@@ -19,8 +19,17 @@ code {
 }
 
 * {
-	font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
 }
+
+a {
+	text-decoration: none;
+}
+
+/*'Lato', sans-serif*/
+/*font-weight: 100*/
+
 
 .app {
   margin-bottom: -80vw;
@@ -30,12 +39,18 @@ code {
 	border: none;
 }
 
+.home-header {
+	background: url('blaue.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .footer {
   width: 100vw;
   height: 10vw;
   background-color: rgba(0,0,0,.3);
   position: relative;
-  top: 69.9vw;
+  top: 70vw;
   display: flex;
   border-top: 1px solid rgba(0,0,0,.5)
 }
@@ -83,10 +98,10 @@ li {
 }
 
 .nav-links:hover {
-	background: white;
+	background: rgba(0,0,0,.05);
 	cursor: pointer;
 	transition: .1s;
-	color: #3C6E8F;
+	color: rgba(0,0,0,.45);
 }
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -94,15 +109,16 @@ li {
 .section-title {
   font-size: 7vw;
   text-align: center;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   background: rgba(0,0,0,.1);
   padding: 1vw 0;
   z-index: 1;
   color: white;
-  text-shadow: 1px 1px rgba(0,0,0,.7);
+  text-shadow: .3px .3px rgba(0,0,0,.7);
 }
 
 .projects {
+	background: url('miro.jpg');
 	margin-top: -5.8vw; 
 }
 
@@ -186,11 +202,14 @@ li {
 }
 
 .project-description-title {
+	color: white;
 	font-size: 6vw;
 	margin-bottom: -2vw;
+	font-weight: 700;
 }
 
 .project-description {
+	color: white;
 	font-size: 4.5vw;
 	padding: 0 2vw;
 	margin-bottom: 15%;
@@ -229,8 +248,6 @@ li {
     border: 1px solid rgba(0,0,0,.7);
     color: rgba(255,255,255,.0);
     transition: .2s;
-
-
 }
 
 .link-button {
@@ -269,6 +286,39 @@ footer > a:hover:before {
   transform: scaleX(1);
 }
 
+.footer-flex-positioner {
+	display: flex;
+}
+
+.footer-icons-div {
+	margin: 0 auto;
+	display: flex;	
+	align-items: center;
+}
+
+.final-links {
+	padding: 0 .8rem;
+	color: black;
+	font-size: 1.6rem;
+}
+
+.fa-angle-up, .fa-angle-down {
+	color: white;
+	animation: colorshift 4s infinite;
+}
+
+@keyframes colorshift {
+	0% {color: rgba(255,255,255,1);}
+	50% {color: rgba(255,255,255,0);}
+	100% {color: rgba(255,255,255,1);}
+}
+
+@-webkit-keyframes colorshift {
+	0% {color: rgba(255,255,255,1);}
+	50% {color: rgba(255,255,255,0);}
+	100% {color: rgba(255,255,255,1);}
+}
+
 .top-link {
   color: white;
   text-decoration: none;
@@ -280,38 +330,120 @@ footer > a:hover:before {
 }
 
 .top-link:hover {
-  color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,.1);
   transition: .1s;
   /*text-decoration: underline;*/
   transition: .2s ease-in;
 }
 
-.about-section-title {
-  margin-bottom: -3vw;
+
+.about-div {	
+	position: relative;
+	height: auto;
+	border-top: 3px solid rgba(0,0,0,.7);
+	border-bottom: 3px solid rgba(0,0,0,.7);
+	/*background: url('https://www.desktopbackground.org/p/2012/05/05/385402_were-inspired-by-wassily-kandinsky-barfoot-duggan_1800x1833_h.jpg');*/
+	/* background-size: cover; */
+	/*background-repeat: no-repeat;*/
+	/*background-position: cover;*/
 }
 
-.about-content {
+.about-flex-positioner {
+	/*margin-bottom: -4em;*/
+}
+
+.kandinsky {
+	background: url('kandinsky.jpg');
+	position: absolute;
+	top: 18%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100vw;
+}
+
+.about-section-title-div {
+    background: rgba(27, 79, 74,.6);
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    position: absolute;
+    /* right: 0; */
+    /* bottom: 100px; */
+    /* left: 0; */
+    /* padding: 0; */
+    width: 100vw;
+    height: 18%;
+    /*right: 0;*/
+    /* position: absolute; */
+    top: 0;
+    /*box-sizing: border-box;*/
+    /*padding: 0 1rem; */
+    /* padding: 1rem 0; */
+}
+
+/*for 320px*/
+.about-section-title {
+	box-sizing: border-box;
+	font-size: 7vw;
+	font-family:'Lato', sans-serif;
+	font-weight: 200; 
 	text-align: center;
-	padding: 0 1rem; 
+	color: white;
+	margin: 0 auto;  
+}
+
+/*.about-section-title {
+	font-size: calc(5vw * .6);
+}*/
+
+.about-content {
+	box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+	text-align: center;
+	position: absolute;
+	background: rgba(0,0,0,.4);
+	padding: 0 calc(25vw * .1);
+	right: 0;
+	top: 118%;
+	height: max-content;
+	width: 100vw;
 }
 
 .about-content-div {
-	margin-bottom: 3.6rem;
-	/*margin-right: 2rem;*/
+	background: rgba(0,0,0,.4);
+	margin: 0;
+	/*padding-top: 5rem;*/
+	width: 25vw;
+	height: 85%;
+	position: absolute;
+	right: 0;
+	/*top: 10%;*/
+	top: 15%;
+	/*font-size: 2.5vw;*/
+}
+
+.par-container {
+	/*margin-top: 2rem; */
 }
 
 .about-par {
-	font-size: .8rem;
-	line-height: 1.15rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	/*font-size: .8rem;*/
+	font-size: .6rem;
+	line-height: .8rem;
 	color: white;
-	margin-top: -.4rem;
-	margin-bottom: 1.6rem;
+	/*margin-top: -.4rem;*/
+	/*margin-bottom: 1.6rem;*/
 	text-shadow: 1px 1px rgba(0,0,0,.2);
 	/*border-bottom: 1px solid rgba(255,255,255,.2);*/
 	/*padding-bottom: 1.3px;*/
 }
 
 .padding-div {
+	position: relative;
 	text-align: center;
   /*padding-left: 1vw;*/
 }
@@ -325,13 +457,20 @@ footer > a:hover:before {
 .profile-photo {
   margin: .8rem 0;
   margin-bottom: .5rem;
+  margin-top: 2.3rem;
+  margin-right: 4.5rem;
   /*border: 1px solid rgba(245,222,179,.7);*/
   /*border:  1px solid rgba(255,255,255,.4);*/
   border-radius: 50%;
   /*box-shadow: 2px 2px rgba(0,0,0,.1);*/
-  max-width: 6rem;
+  max-width: 4rem;
   /*filter: sepia();*/
   height: auto;
+}
+.up-arrow-div {
+	text-align: center;
+	margin-top: 10.3rem;
+	margin-bottom: 1.6rem;
 }
 
 @media only screen and (min-width: 320px) {
@@ -343,6 +482,28 @@ footer > a:hover:before {
 	}
 	.top-link {
 		font-size: 5vw;
+	}
+	.footer {
+		padding: .7rem 0;
+	}
+}
+
+@media only screen and (min-width: 350px) {
+	.profile-photo {
+		margin-top: 2.8rem;
+		margin-right: 4.8rem;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.profile-photo {
+		max-width: 5rem;
+		margin-top: 3.2rem;
+		margin-right: 5.8rem;
+	}
+	.up-arrow-div {
+		margin-top: 9rem;
+		margin-bottom: 2.6rem;
 	}
 }
 
@@ -360,17 +521,38 @@ footer > a:hover:before {
 		margin: 0 5.4rem; 
 	}
 	.about-content-div {
-		margin-bottom: 4.8rem;
+		/*margin-bottom: 4.8rem;*/
 	}
 	.profile-photo {
-		max-width: 7rem;
+		max-width: 6rem;
+		margin-top: 3.3rem;
+		margin-right: 6.5rem;
 	}
 	.about-par {
-		font-size: 1rem;
-		line-height: 1.4rem;
+		font-size: .8rem;
+		line-height: 1rem;
 	}
 	footer > a:before {
 		bottom: .8vw;
+	}
+	.up-arrow-div {
+		margin-top: 14rem;
+		margin-bottom: 3rem;
+	}
+	.final-links {
+		padding: 0 .75rem; 
+		font-size: 1.7rem;
+	}
+	.footer {
+		padding: 0 0;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.profile-photo {
+		max-width: 6.5rem;
+		margin-top: 3.8rem;
+		margin-right: 7.5rem;
 	}
 }
 
@@ -388,21 +570,38 @@ footer > a:hover:before {
 		margin: 0 6.2rem; 
 	}
 	.about-content-div {
-		margin-bottom: 5.8rem;
+		/*margin-bottom: 5.8rem;*/
 	}
 	.profile-photo {
-		max-width: 8.5rem;
+		max-width: 7.5rem;
+		margin-top: 4.2rem;
+		margin-right: 8.2rem;
 	}
 	.about-par {
-		font-size: 1.2rem;
-		line-height: 1.7rem;
+		/*font-size: 1.2rem;*/
+		/*line-height: 1.7rem;*/
+	}
+	.final-links {
+		padding: 0 .8rem;
+		font-size: 2.6rem;
+	}
+	.up-arrow-div {
+		margin-bottom: 5rem;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.profile-photo {
+		max-width: 8rem;
+		margin-top: 4.5rem;
+		margin-right: 8.6rem;
 	}
 }
 
 @media only screen and (min-width: 650px) {
 	.logo-div-sub {
-		font-size: 1.05rem;
-		width: 8rem;
+		font-size: .83rem;
+		width: 7.35rem;
     	height: 2.6rem;
     	padding: 0 .8rem;
 	}
@@ -412,15 +611,37 @@ footer > a:hover:before {
 	.logo-div2, .logo-div3 {
 		margin: 0 8.8rem; 
 	}
+
+	.project-description-title {
+		font-size: 5vw;
+	}
+
+	.project-description {
+		font-size: 3.5vw;
+	}
+
 	.about-content-div {
-		margin-bottom: 6.8rem;
+		/*margin-bottom: 6.8rem;*/
 	}
 	.profile-photo {
-		max-width: 9.5rem;
+		max-width: 9rem;
+		margin-top: 4.5rem;
+		margin-right: 9.2rem;
 	}
 	.about-par {
-		font-size: 1.2rem;
-		line-height: 1.7rem;
+		/*font-size: 1.2rem;*/
+		/*line-height: 1.7rem;*/
+	}
+	.up-arrow-div {
+		margin-bottom: 6.5rem;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.profile-photo {
+		max-width: 9.5rem;
+		margin-top: 4.9rem;
+		margin-right: 10rem;
 	}
 }
 
@@ -456,12 +677,19 @@ footer > a:hover:before {
 		border-radius: 2px;
 	}
 
-	.profile-photo {
+	/*.profile-photo {
 		margin-top: 4vw;
-	}
+	}*/
 
 	.flex-positioner-div {
-		margin-top: -31.5vw;
+		margin-top: -25.5vw;
+	}
+
+	.scoresearch-flex-positioner {
+		margin-top: -28.5vw; 
+	}
+	.gitapiary-flex-positioner {
+		margin-top: -28.5vw;
 	}
 
 	.logo-div {
@@ -510,12 +738,12 @@ footer > a:hover:before {
 
 	.project-description-title {
 		margin-left: 12vw;
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 
 	.project-description {
 		margin-left: 10vw;
-		font-size: 2.8vw;
+		font-size: 2.3vw;
 	}
 
 	.scoresearch-description {
@@ -555,55 +783,189 @@ footer > a:hover:before {
 	}
 
 	.about-flex-positioner {
-		display: flex;	
+		/*display: flex;	
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
-		margin: 0 3rem;
+		margin: 0 3rem;*/
+	}
+
+	.about-section-title-div {
+		/*background: rgba(27, 79, 74,.8);*/
+		/*font-family: 'Lato', sans-serif;*/
+		/*font-weight: 200;*/
+		font-size: calc(5vw * .6);
+		width: 25vw;
+		right: 0;
+		height: 12%;
+		/*text-decoration: none;*/
+		/*position: absolute;*/
+		/*top: 0;*/
+	}
+
+	.about-section-title {
+		font-size: 2rem;
+	}
+
+	.kandinsky {
+		top: 0;
+		height: 100%;
+		width: 75vw;
+	}
+
+	.about-content {
+		padding: 0 calc(25vw * .06);
+		right: 0;
+		top: 12%;
+		height: 88%;
+		width: 25vw;
+		/*font-size: 1.5vw;
+	    /*margin-top: -3.5vw;
 	}
 
 	.about-content-div {
-		position: relative;
+		/*position: relative;
 		/*font-size: 2.5vw;*/
-		margin-bottom: 0rem;
-		margin-top: 7rem;
+		/*margin-bottom: 0rem;*/
+		/*margin-top: 7rem;*/
 	}
 	.padding-div {
 		text-align: left;
 	}
 	.about-content-div {
-		margin-top: 5.5rem;
-		margin-bottom: 1.8rem;
+		/*margin-top: 5.5rem;*/
+		/*margin-bottom: 1.8rem;*/
 	}
 	.profile-photo {
-		max-width: 10rem; 
+		position: relative;
+		bottom: 5rem;
+		max-width: 8.7rem; 
+		margin-left: 6rem;
+		margin-bottom: -.5rem;
 	}
 	.about-par {
-		font-size: 1.1rem;
-		line-height: 1.45rem;
+		font-size: .7rem;
+		line-height: .9rem;
+	}
+	.up-arrow-div {
+		margin-top: 1rem;
+		margin-bottom: 6.5rem;
+	}
+}
+
+@media only screen  and (min-width: 800px) {
+	.profile-photo {
+		margin-left: 6.7rem;
 	}
 }
 
 @media only screen  and (min-width: 850px) {
 	.about-content-div {
-		position: relative;
+		/*position: relative;
 		font-size: 2.5vw;
 		margin-bottom: 0rem;
-		margin-top: 7rem;
+		margin-top: 7rem;*/
 	}
 	.about-content-div {
-		margin-bottom: 2.8rem;
+		/*margin-bottom: 2.8rem;*/
 	}
 	.profile-photo {
-		max-width: 11rem; 
+		max-width: 9.5rem; 
+		margin-left: 6.9rem;
 	}
 	.about-par {
-		font-size: 1.2rem;
-		line-height: 1.6rem;
+		font-size: .8rem;
+		line-height: .99rem;
+	}
+	.about-flex-positioner {
+		/*margin-bottom: -2rem;*/
 	}
 }
 
+@media only screen  and (min-width: 900px) {
+	.profile-photo {
+		margin-left: 7.9rem;
+	}
+}
+
+@media only screen  and (min-width: 950px) {
+	.par-container {
+		margin-top: -.5rem;
+	}
+	.about-par {
+		font-size: .9rem;
+		line-height: 1rem;
+	}
+	.profile-photo {
+		max-width: 10rem;
+		margin-left: 8.2rem; 
+		margin-top: 5.3rem;
+	}
+}
+
+@media only screen  and (min-width: 1000px) {
+	.about-par {
+		font-size: .94rem;
+		line-height: 1.07rem;
+	}
+	.profile-photo {
+		max-width: 10.5rem;
+		margin-left: 8.8rem; 
+		margin-top: 5.3rem;
+	}
+}
+
+
+@media only screen  and (min-width: 1050px) {
+	.project-description-title {
+		font-size: 3.5vw;
+	}
+	.project-description {
+		font-size: 2vw;
+	}	
+	.flex-positioner-div {
+		margin-top: -22.5vw;
+	}
+	.scoresearch-flex-positioner {
+		margin-top: -23vw; 
+	}
+	.gitapiary-flex-positioner {
+		margin-top: -25vw;
+	}
+	.about-par {
+		line-height: 1.15rem;
+	}
+}
+
+@media only screen  and (min-width: 1100px) {
+	.profile-photo {
+		max-width: 11.5rem;
+		margin-left: 9.8rem; 
+		margin-top: 5.3rem;
+	}
+	.about-par {
+		/*font-size: 1.03rem;*/
+		line-height: 1.3rem;
+	}
+}
+
+@media only screen and (min-width: 1150px) {
+	.about-section-title {
+		line-height: 3rem;
+	}
+	
+}
+
 @media only screen  and (min-width: 1224px) {
+	.home-header {
+    	background: url('https://emanatingjoy.files.wordpress.com/2014/12/der-weg-ins-blaue.jpg');
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	.title, .nav-links {
+    	font-family: 'Lato', sans-serif;
+    	font-weight: 200;
+	}
 	.projects {
 		margin-top: -2.5vw; 
 	}
@@ -687,8 +1049,12 @@ footer > a:hover:before {
 
 	.dev-div {
 		position: absolute;
-		top: 12vw;
+		top: 13vw;
 		left: 0;
+	}
+
+	.scoresearch-dev-div {
+		top: 11.5vw;
 	}
 
 	.fab {
@@ -735,25 +1101,68 @@ footer > a:hover:before {
 		margin-top: 0;
 	}*/
 
-	/*.about-content {
-		font-size: 1.5vw;
-	    margin-top: -3.5vw;
-	}*/
-	.about-flex-positioner {
-		margin: 0 10rem;
+	.about-content {
+		/*padding: 0 calc(25vw * .06);
+		right: 0;
+		top: 12%;
+		height: 88%;
+		width: 25vw;
+		/*font-size: 1.5vw;
+	    /*margin-top: -3.5vw;*/
 	}
-	.about-content-div {
+	/*.about-div {	
 		position: relative;
-		font-size: 2.5vw;
-		margin-bottom: 2.8rem;
-		margin-top: 7.7rem;
+		background: url('https://www.desktopbackground.org/p/2012/05/05/385402_were-inspired-by-wassily-kandinsky-barfoot-duggan_1800x1833_h.jpg');
+		background-repeat: no-repeat;
+		height: auto;
+	}*/
+	.about-section-title-div {
+		/*background: rgba(27, 79, 74,.8);
+		font-family: 'Lato', sans-serif;
+		font-weight: 200;
+		font-size: calc(5vw * .6);
+		width: 25vw;
+		text-decoration: none;
+		position: absolute;
+		top: 0;*/
 	}
+	/*.kandinsky {
+		background: url('https://www.desktopbackground.org/p/2012/05/05/385402_were-inspired-by-wassily-kandinsky-barfoot-duggan_1800x1833_h.jpg');
+		position: absolute;
+		top: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 75vw;
+	}
+	.about-content-relative-positioner {
+		position: relative;
+	}
+	.about-flex-positioner {
+		margin-bottom: 10rem;
+	}*/
+	.up-arrow-div {
+		margin-bottom: 11.3rem;
+	}
+	./*about-content-div {
+		background: rgba(0,0,0,.4);
+		margin: 0; 
+		position: absolute;
+		right: 0;
+		top: 15%;
+		font-size: calc(5vw * .25);
+	}*/
 	.profile-photo {
-		max-width: 12rem; 
+    	margin-top: 5.6rem; 
+    	margin-left: 10.5rem;
+		max-width: 12.5rem; 
+	}
+	.par-container {
+		margin-top: 1rem; 
 	}
 	.about-par {
-		font-size: 1.3rem;
-		line-height: 1.6rem;
+		font-size: 1.03rem;
+		line-height: 1.3rem;
 	}
     .top-link {
     	font-size: 2vw;
@@ -765,7 +1174,7 @@ footer > a:hover:before {
 	}
 }
 
-@-moz-keyframes bounce {
+/*@-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
@@ -812,7 +1221,7 @@ footer > a:hover:before {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
-}
+}*/
 .fa-5x {
   /*display: block;*/
   color: white;
@@ -828,8 +1237,64 @@ footer > a:hover:before {
 /*   background-size: contain; */
 }
 
-.bounce {
+@media only screen  and (min-width: 1300px) {
+	/*.about-section-title-div {
+		line-height: 3.5rem;
+	}*/
+	.about-section-title {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+	}
+	.profile-photo {
+		max-width: 13rem;
+		margin-left: 11.4rem; 
+    	margin-top: 6rem; 
+	}
+	.about-par {
+		font-size: 1.11rem;
+		line-height: 1.4rem;
+	}
+}
+
+@media only screen  and (min-width: 1400px) {
+	.profile-photo {
+		max-width: 14rem;
+		margin-left: 12.4rem; 
+	}
+	.about-par {
+		font-size: 1.19rem;
+		line-height: 1.5rem;
+	}
+}
+
+@media only screen  and (min-width: 1500px) {
+	.profile-photo {
+		max-width: 15rem;
+		margin-left: 13.4rem; 
+	}
+	.about-par {
+		font-size: 1.23rem;
+		line-height: 1.62rem;
+	}
+}
+
+@media only screen  and (min-width: 1600px) {
+	.profile-photo {
+		max-width: 16.5rem;
+		margin-left: 14rem; 
+	}
+	.about-par {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+	}
+	.about-section-title {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+}
+
+/*.bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
-}
+}*/

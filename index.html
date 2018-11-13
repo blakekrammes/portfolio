@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" href="initials.png">
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,12 +27,14 @@
           </div>
         </header>
       </section>
-      <div class="arrow bounce"><a href="#projects" class="arrow-link"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a></div>
+      <div class="arrow bounce"><a href="#projects" class="arrow-link"><i class="fa fa-angle-down fa-5x"></i></a></div>
       <section id="projects" class="projects" role="region">
         <h2 class="section-title">Projects</h2>
         <div class="img-div">
           <div class="project-description-div">
-            <h2 class="project-description-title notator-description-title">Notator</h2>
+            <a class="project-img-link" href="https://notator.herokuapp.com/" target="_blank">
+              <h2 class="project-description-title notator-description-title">Notator</h2>
+            </a>
             <p class="project-description notator-description">
               Notator is an application that allows you to detect pitch from the microphone and press keyboard keys to 
               create music notation
@@ -72,7 +74,9 @@
         </div>
         <div class="img-div">
           <div class="project-description-div scoresearch-description-div">
-            <h2 class="project-description-title scoresearch-description-title">Score Search</h2>
+            <a class="project-img-link" href="https://scoresearch.herokuapp.com/" target="_blank">
+              <h2 class="project-description-title scoresearch-description-title">Score Search</h2>
+            </a>
             <p class="project-description scoresearch-description">
               Score Search is an application that analyzes a recording of classical music and returns the sheet music
             </p>
@@ -83,7 +87,7 @@
               <i class="fab fa-node-js"></i>
             </div> 
           </div>
-          <div class="flex-positioner-div">
+          <div class="flex-positioner-div scoresearch-flex-positioner">
             <a class="project-img-link" href="https://scoresearch.herokuapp.com/" target="_blank">
               <img class="responsive-img notator-img" src="scoresearch.png" alt="score search site image" />
             </a>
@@ -103,7 +107,9 @@
         </div>
         <div class="img-div">
           <div class="project-description-div">
-            <h2 class="project-description-title gitapiary-description-title">Git Apiary</h2>
+            <a class="project-img-link" href="https://blakesters.github.io/git-apiary/" target="_blank">
+              <h2 class="project-description-title gitapiary-description-title">Git Apiary</h2>
+            </a>
             <p class="project-description gitapiary-description">
               Git Apiary is an application that enables you to simultaneously search for public APIs and related resources on GitHub and YouTube
             </p>
@@ -113,7 +119,7 @@
               <i class="fab fa-js"></i>
             </div> 
           </div>
-          <div class="flex-positioner-div">
+          <div class="flex-positioner-div gitapiary-flex-positioner">
             <a class="project-img-link" href="https://blakesters.github.io/git-apiary/" target="_blank">
               <img class="responsive-img notator-img" src="gitapiary.png" alt="git-apiary site image" />
             </a>
@@ -133,13 +139,18 @@
         </div>
       </section>
       <section id="about" class="about-div" role="region">
-        <h2 class="section-title about-section-title">About</h2>
-          <div class="about-flex-positioner">
+          <div class="kandinsky"></div>
+          <!-- <div class="about-flex-positioner"> -->
             <div class="padding-div">
               <img class="responsive-img-about profile-photo" src="blake.jpg" alt="Blake's profile picture"/>
             </div>
-            <div class="about-content-div">
-              <div class="about-content">
+            <div class="about-section-title-div">
+              <h2 class="about-section-title">About</h2>
+            </div>
+            <!-- <div class="about-content-div"> -->
+              <!-- <div class="about-content-relative-positioner"> -->
+            <div class="about-content">
+              <div class="par-container">
                 <p class="about-par">
                   Blake is a software developer, classical pianist and composer whose music has been featured at the Oregon Bach Festival Composers Symposium
                   </p>
@@ -155,11 +166,35 @@
                 </p>
               </div>
             </div>
-          </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
         </section>
+        <div class="arrow2 up-arrow-div">
+          <a href="#app"><i class="fa fa-angle-up fa-5x"></i></a>
+        </div>
     </main>
     <footer class="footer" role="footer">
-      <a class="top-link" href="#app">to top</a>
+      <!-- <div class="footer-flex-positioner"> -->
+        <!-- <a class="top-link" href="#app">to top</a> -->
+        <div class="footer-icons-div">
+          <a href="https://github.com/Blakesters" target="_blank" class="final-links">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/blake-krammes/" target="_blank" class="final-links">
+            <i class="fa fa-linkedin-in"></i>
+          </a>
+          <a href="blake_krammes_resume.pdf" target="_blank" class="final-links">
+            <i class="fa fa-file-pdf"></i>
+          </a>
+          <a href="mailto:blake.c.krammes@gmail.com" class="final-links">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="https://soundcloud.com/blakekrammes" target="_blank" class="final-links">
+            <i class="fa fa-soundcloud"></i>
+          </a>
+        </div>
+      <!-- </div> -->
     </footer>
     <script src="script.js"></script>
   </body>
