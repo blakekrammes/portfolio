@@ -20,7 +20,7 @@ code {
 
 * {
 	font-family: 'Lato', sans-serif;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 a {
@@ -964,7 +964,7 @@ footer > a:hover:before {
 	}
 	.title, .nav-links {
     	font-family: 'Lato', sans-serif;
-    	font-weight: 200;
+    	font-weight: 300;
 	}
 	.projects {
 		margin-top: -2.5vw; 
