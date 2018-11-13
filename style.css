@@ -2,6 +2,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
+  background: url('miro.jpg'); 
+  background-repeat: no-repeat;
+  background-position: 2% 0;
+  /*background-size: cover;*/
   background-color: #3C6E8F;
   margin: 0;
   padding: 0;
@@ -25,6 +29,18 @@ code {
 
 a {
 	text-decoration: none;
+}
+
+.pärt {
+	color: white;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	transition: .2s;
+}
+
+.pärt:hover {
+	/*color: rgba(255,255,255,);*/
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	transition: .2s;
 }
 
 /*'Lato', sans-serif*/
@@ -118,7 +134,7 @@ li {
 }
 
 .projects {
-	background: url('miro.jpg');
+	/*background: url('miro.jpg');*/
 	margin-top: -5.8vw; 
 }
 
@@ -493,9 +509,21 @@ footer > a:hover:before {
 		margin-top: 2.8rem;
 		margin-right: 4.8rem;
 	}
+	body {
+		background-position: 1% -18%;
+	}
 }
 
+@media only screen and (min-width: 375px) {
+	body {
+		background-position: 1% -38%;
+	}
+}	
+
 @media only screen and (min-width: 400px) {
+	body {
+		background-position: 1% -524%;
+	}
 	.profile-photo {
 		max-width: 5rem;
 		margin-top: 3.2rem;
@@ -507,7 +535,16 @@ footer > a:hover:before {
 	}
 }
 
+@media only screen and (min-width: 435px) {
+	body {
+		background-position: 1% -724%;
+	}
+}
+
 @media only screen and (min-width: 450px) {
+	body {
+		background-position: 1% 740%;
+	}
 	.logo-div-sub {
 		font-size: .85rem;
 		width: 6.4rem;
@@ -548,7 +585,15 @@ footer > a:hover:before {
 	}
 }
 
+@media only screen and (min-width: 470px) {
+	body {
+		background-position: 1% 840%;
+	}
+}
 @media only screen and (min-width: 500px) {
+	body {
+		background-position: 1% 279%;
+	}
 	.profile-photo {
 		max-width: 6.5rem;
 		margin-top: 3.8rem;
@@ -556,7 +601,18 @@ footer > a:hover:before {
 	}
 }
 
+@media only screen and (min-width: 535px) {
+	body {
+		background-repeat: repeat-y;
+		background-position: 1% 150%;
+	}
+}
+
 @media only screen and (min-width: 550px) {
+	body {
+		background-repeat: repeat-y;
+		background-position: 1% 145%;
+	}
 	.logo-div-sub {
 		font-size: 1.05rem;
 		width: 8rem;
@@ -591,6 +647,10 @@ footer > a:hover:before {
 }
 
 @media only screen and (min-width: 600px) {
+	body {
+		background-repeat: repeat-y;
+		background-position: 1% 125%;
+	}
 	.profile-photo {
 		max-width: 8rem;
 		margin-top: 4.5rem;
@@ -599,6 +659,10 @@ footer > a:hover:before {
 }
 
 @media only screen and (min-width: 650px) {
+	body {
+		background-repeat: repeat-y;
+		background-position: 0 120%;
+	}
 	.logo-div-sub {
 		font-size: .83rem;
 		width: 7.35rem;
@@ -638,6 +702,10 @@ footer > a:hover:before {
 }
 
 @media only screen and (min-width: 700px) {
+	body {
+		background-repeat: repeat-y;
+		background-position: 0 105%;
+	}
 	.profile-photo {
 		max-width: 9.5rem;
 		margin-top: 4.9rem;
@@ -646,6 +714,10 @@ footer > a:hover:before {
 }
 
 @media only screen  and (min-width: 768px) {
+	body {
+		background-repeat: no-repeat;
+		background-position: 0 -40%;
+	}
 	.section-title {
 		font-size: 5vw;
 	}
@@ -883,6 +955,10 @@ footer > a:hover:before {
 }
 
 @media only screen  and (min-width: 900px) {
+	body {
+		/*background-repeat: no-repeat;*/
+		background-position: 0 -90%;
+	}
 	.profile-photo {
 		margin-left: 7.9rem;
 	}
@@ -904,6 +980,10 @@ footer > a:hover:before {
 }
 
 @media only screen  and (min-width: 1000px) {
+	body {
+		/*background-repeat: no-repeat;*/
+		background-position: 0 -200%;
+	}
 	.about-par {
 		font-size: .94rem;
 		line-height: 1.07rem;
@@ -938,6 +1018,10 @@ footer > a:hover:before {
 }
 
 @media only screen  and (min-width: 1100px) {
+	body {
+		/*background-repeat: no-repeat;*/
+		background-position: 0 -250%;
+	}
 	.profile-photo {
 		max-width: 11.5rem;
 		margin-left: 9.8rem; 
@@ -950,6 +1034,10 @@ footer > a:hover:before {
 }
 
 @media only screen and (min-width: 1150px) {
+	body {
+		/*background-repeat: no-repeat;*/
+		background-position: 0 -370%;
+	}
 	.about-section-title {
 		line-height: 3rem;
 	}
@@ -957,6 +1045,10 @@ footer > a:hover:before {
 }
 
 @media only screen  and (min-width: 1224px) {
+	body {
+		/*background-repeat: no-repeat;*/
+		background-position: 0 -100%;
+	}
 	.home-header {
     	background: url('https://emanatingjoy.files.wordpress.com/2014/12/der-weg-ins-blaue.jpg');
     	background-repeat: no-repeat;
@@ -1254,6 +1346,12 @@ footer > a:hover:before {
 		font-size: 1.11rem;
 		line-height: 1.4rem;
 	}
+}
+@media only screen  and (min-width: 1350px) {
+	body {
+			/*background-repeat: no-repeat;*/
+			background-position: 0 -130%;
+		}
 }
 
 @media only screen  and (min-width: 1400px) {
