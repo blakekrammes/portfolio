@@ -135,6 +135,8 @@ li {
 
 .projects {
 	/*background: url('miro.jpg');*/
+	background: url('miro.jpg');
+	background-size: cover;
 	margin-top: -5.8vw; 
 }
 
@@ -253,7 +255,7 @@ li {
     border-radius: 2px;
     width: 3.5rem;
     height: 2.2rem;
-    padding: 0 .4rem;
+    padding: .4rem .4rem;
     cursor: pointer;
     /*margin-right: 1rem;*/
     transition: .2s;
@@ -1372,8 +1374,6 @@ footer > a:hover:before {
 			background-position: 0 -4900%;
 		}
 }
-
-
 
 @media only screen  and (min-width: 1400px) {
 	body {
