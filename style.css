@@ -38,17 +38,19 @@ a {
 }
 
 .pärt:hover {
-	/*color: rgba(255,255,255,);*/
 	border-bottom: 1px solid rgba(255,255,255,.5);
 	transition: .2s;
 }
 
-/*'Lato', sans-serif*/
-/*font-weight: 100*/
-
-
 .app {
   margin-bottom: -80vw;
+}
+
+.arrow {
+	position: absolute;
+	bottom: 1%;
+	left: 37%;
+	margin: 0 auto;
 }
 
 .arrow-link {
@@ -322,19 +324,21 @@ footer > a:hover:before {
 
 .fa-angle-up, .fa-angle-down {
 	color: white;
-	animation: colorshift 4s infinite;
+	animation: colorshift 4.3s infinite;
+	filter: invert(1);
+	width: 100px;
 }
 
 @keyframes colorshift {
-	0% {color: rgba(255,255,255,1);}
-	50% {color: rgba(255,255,255,0);}
-	100% {color: rgba(255,255,255,1);}
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 @-webkit-keyframes colorshift {
-	0% {color: rgba(255,255,255,1);}
-	50% {color: rgba(255,255,255,0);}
-	100% {color: rgba(255,255,255,1);}
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 .top-link {
@@ -531,6 +535,9 @@ footer > a:hover:before {
 		margin-top: 3.2rem;
 		margin-right: 5.8rem;
 	}
+	.arrow {
+		left: 39%;
+	}
 	.up-arrow-div {
 		margin-top: 9rem;
 		margin-bottom: 2.6rem;
@@ -596,6 +603,9 @@ footer > a:hover:before {
 	body {
 		background-position: 1% 279%;
 	}
+	.arrow {
+		left: 41%;
+	}
 	.profile-photo {
 		max-width: 6.5rem;
 		margin-top: 3.8rem;
@@ -653,6 +663,9 @@ footer > a:hover:before {
 		background-repeat: repeat-y;
 		background-position: 1% 125%;
 	}
+	.arrow {
+		left: 43%;
+	}
 	.profile-photo {
 		max-width: 8rem;
 		margin-top: 4.5rem;
@@ -707,6 +720,9 @@ footer > a:hover:before {
 	body {
 		background-repeat: repeat-y;
 		background-position: 0 105%;
+	}
+	.arrow {
+		left: 44%;
 	}
 	.profile-photo {
 		max-width: 9.5rem;
@@ -931,6 +947,9 @@ footer > a:hover:before {
 	.profile-photo {
 		margin-left: 6.7rem;
 	}
+	.arrow {
+		left: 45%;
+	}
 }
 
 @media only screen  and (min-width: 850px) {
@@ -963,6 +982,9 @@ footer > a:hover:before {
 	}
 	.profile-photo {
 		margin-left: 7.9rem;
+	}
+	.arrow {
+		left: 46%;
 	}
 }
 
@@ -1017,6 +1039,9 @@ footer > a:hover:before {
 	.about-par {
 		line-height: 1.15rem;
 	}
+	.arrow {
+		left: 45%;
+	}
 }
 
 @media only screen  and (min-width: 1100px) {
@@ -1042,6 +1067,9 @@ footer > a:hover:before {
 	}
 	.about-section-title {
 		line-height: 3rem;
+	}
+	.arrow {
+		left: 46%;
 	}
 	
 }
@@ -1156,85 +1184,10 @@ footer > a:hover:before {
 		font-size: 3vw;
 	}
 
-	/*.profile-photo {
-		border-radius: 50%;
-	}*/
-
-	/*.responsive-img-about {
-		max-width: 15vw;
-		height: auto;
-		padding: 6vw;
-		margin-left: 24vw;
-	}*/
-
-	/*.about-content-div {
-		position: relative;
-		top: -31.5vw;
-		font-size: 5vw;
-		margin-top: 32vw;
-	}*/
-
-	/*.about-content {
-		color: white;
-	  text-align: center;
-	  margin-left: 0;
-	  margin-top: -2vw;
-	}*/
-
-	/*.responsive-img-about {
-		max-width: 15vw;
-		height: auto;
-		padding: 6vw;
-		margin-left: 0;
-	}*/
-	/*.about-content-div {
-		position: relative;
-		top: -31.5vw;
-		font-size: 1.7vw;
-		margin-left: 31vw;
-		margin-top: 0;
-	}*/
-
-	.about-content {
-		/*padding: 0 calc(25vw * .06);
-		right: 0;
-		top: 12%;
-		height: 88%;
-		width: 25vw;
-		/*font-size: 1.5vw;
-	    /*margin-top: -3.5vw;*/
+	.arrow {
+		left: 47%;
 	}
-	/*.about-div {	
-		position: relative;
-		background: url('https://www.desktopbackground.org/p/2012/05/05/385402_were-inspired-by-wassily-kandinsky-barfoot-duggan_1800x1833_h.jpg');
-		background-repeat: no-repeat;
-		height: auto;
-	}*/
-	.about-section-title-div {
-		/*background: rgba(27, 79, 74,.8);
-		font-family: 'Lato', sans-serif;
-		font-weight: 200;
-		font-size: calc(5vw * .6);
-		width: 25vw;
-		text-decoration: none;
-		position: absolute;
-		top: 0;*/
-	}
-	/*.kandinsky {
-		background: url('https://www.desktopbackground.org/p/2012/05/05/385402_were-inspired-by-wassily-kandinsky-barfoot-duggan_1800x1833_h.jpg');
-		position: absolute;
-		top: 0;
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 100%;
-		width: 75vw;
-	}
-	.about-content-relative-positioner {
-		position: relative;
-	}
-	.about-flex-positioner {
-		margin-bottom: 10rem;
-	}*/
+
 	.up-arrow-div {
 		margin-bottom: 11.3rem;
 	}
@@ -1268,67 +1221,9 @@ footer > a:hover:before {
 	}
 }
 
-/*@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}*/
 .fa-5x {
   /*display: block;*/
   color: white;
-}
-.arrow {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  margin-left: -20px;
-  width: 40px;
-  height: 60px; /*change with size of arrow to make sit on bottom */
-/*   background-image: url(); */
-/*   background-size: contain; */
 }
 
 @media only screen  and (min-width: 1300px) {
@@ -1415,9 +1310,3 @@ footer > a:hover:before {
 		line-height: 4rem;
 	}
 }
-
-/*.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}*/
