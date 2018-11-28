@@ -36,7 +36,13 @@ $('a[href*="#"]')
   });
 
   $(window).scroll(function(){
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 80); 
+    if ($('.arrow').css('opacity') == 0) {
+      $('.arrow').css('display', 'none');
+    }
+    else {
+      $('.arrow').css('display', 'block');
+    }
   //250 is fade pixels
   });
 

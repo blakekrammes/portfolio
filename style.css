@@ -47,7 +47,11 @@ a {
 }
 
 .arrow {
-	text-align: center;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
 }
 
 .arrow-link {
