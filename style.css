@@ -47,10 +47,7 @@ a {
 }
 
 .arrow {
-	position: absolute;
-	bottom: 1%;
-	left: 37%;
-	margin: 0 auto;
+	text-align: center;
 }
 
 .arrow-link {
@@ -535,9 +532,6 @@ footer > a:hover:before {
 		margin-top: 3.2rem;
 		margin-right: 5.8rem;
 	}
-	.arrow {
-		left: 39%;
-	}
 	.up-arrow-div {
 		margin-top: 9rem;
 		margin-bottom: 2.6rem;
@@ -603,9 +597,6 @@ footer > a:hover:before {
 	body {
 		background-position: 1% 279%;
 	}
-	.arrow {
-		left: 41%;
-	}
 	.profile-photo {
 		max-width: 6.5rem;
 		margin-top: 3.8rem;
@@ -663,9 +654,6 @@ footer > a:hover:before {
 		background-repeat: repeat-y;
 		background-position: 1% 125%;
 	}
-	.arrow {
-		left: 43%;
-	}
 	.profile-photo {
 		max-width: 8rem;
 		margin-top: 4.5rem;
@@ -707,10 +695,6 @@ footer > a:hover:before {
 		margin-top: 4.5rem;
 		margin-right: 9.2rem;
 	}
-	.about-par {
-		/*font-size: 1.2rem;*/
-		/*line-height: 1.7rem;*/
-	}
 	.up-arrow-div {
 		margin-bottom: 6.5rem;
 	}
@@ -720,9 +704,6 @@ footer > a:hover:before {
 	body {
 		background-repeat: repeat-y;
 		background-position: 0 105%;
-	}
-	.arrow {
-		left: 44%;
 	}
 	.profile-photo {
 		max-width: 9.5rem;
@@ -947,9 +928,6 @@ footer > a:hover:before {
 	.profile-photo {
 		margin-left: 6.7rem;
 	}
-	.arrow {
-		left: 45%;
-	}
 }
 
 @media only screen  and (min-width: 850px) {
@@ -982,9 +960,6 @@ footer > a:hover:before {
 	}
 	.profile-photo {
 		margin-left: 7.9rem;
-	}
-	.arrow {
-		left: 46%;
 	}
 }
 
@@ -1039,9 +1014,6 @@ footer > a:hover:before {
 	.about-par {
 		line-height: 1.15rem;
 	}
-	.arrow {
-		left: 45%;
-	}
 }
 
 @media only screen  and (min-width: 1100px) {
@@ -1067,11 +1039,7 @@ footer > a:hover:before {
 	}
 	.about-section-title {
 		line-height: 3rem;
-	}
-	.arrow {
-		left: 46%;
-	}
-	
+	}	
 }
 
 @media only screen  and (min-width: 1224px) {
@@ -1184,21 +1152,10 @@ footer > a:hover:before {
 		font-size: 3vw;
 	}
 
-	.arrow {
-		left: 47%;
-	}
-
 	.up-arrow-div {
 		margin-bottom: 11.3rem;
 	}
-	./*about-content-div {
-		background: rgba(0,0,0,.4);
-		margin: 0; 
-		position: absolute;
-		right: 0;
-		top: 15%;
-		font-size: calc(5vw * .25);
-	}*/
+
 	.profile-photo {
     	margin-top: 5.6rem; 
     	margin-left: 10.5rem;
