@@ -51,7 +51,6 @@ a {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* display: none; */
 }
 
 .arrow-link {
@@ -170,6 +169,10 @@ li {
     transition: .2s;
 }
 
+.composer-img {
+	margin-bottom: 16px;
+}
+
 .responsive-img:hover {
 	border: 2px solid rgba(0,0,0,0);
 	transition: .2s;
@@ -192,7 +195,7 @@ li {
 .logo-div1 {
 	margin: 0 2rem;
 }
-.logo-div2, .logo-div3 {
+.logo-div2, .logo-div3, .logo-div4 {
 	margin: 0 4.7rem;
 }
 
@@ -258,7 +261,7 @@ li {
     border-radius: 2px;
     width: 3.5rem;
     height: 2.2rem;
-    padding: .4rem .4rem;
+    padding: .2rem .4rem;
     cursor: pointer;
     /*margin-right: 1rem;*/
     transition: .2s;
@@ -561,7 +564,7 @@ footer > a:hover:before {
 	.logo-div1 {
 		margin: 0 1rem; 
 	}
-	.logo-div2, .logo-div3 {
+	.logo-div2, .logo-div3, .logo-div4 {
 		margin: 0 5.4rem; 
 	}
 	.about-content-div {
@@ -629,7 +632,7 @@ footer > a:hover:before {
 	.logo-div1 {
 		margin: 0 1rem; 
 	}
-	.logo-div2, .logo-div3 {
+	.logo-div2, .logo-div3, .logo-div4 {
 		margin: 0 6.2rem; 
 	}
 	.about-content-div {
@@ -679,7 +682,7 @@ footer > a:hover:before {
 	.logo-div1 {
 		margin: 0 3rem; 
 	}
-	.logo-div2, .logo-div3 {
+	.logo-div2, .logo-div3, .logo-div4 {
 		margin: 0 8.8rem; 
 	}
 
@@ -752,9 +755,13 @@ footer > a:hover:before {
 		border-radius: 2px;
 	}
 
-	/*.profile-photo {
-		margin-top: 4vw;
-	}*/
+	.notator-description-div, .scoresearch-description-div {
+		top: -18px;
+	}
+
+	.gitapiary-description-div, .composer-map-description-div {
+		top: -40px;
+	}
 
 	.flex-positioner-div {
 		margin-top: -25.5vw;
@@ -775,7 +782,7 @@ footer > a:hover:before {
   		margin: 0; 
 	}
 
-	.logo-div2, .logo-div3 {
+	.logo-div2, .logo-div3, .logo-div4 {
 		margin: 0;
 	}
 
@@ -821,9 +828,9 @@ footer > a:hover:before {
 		font-size: 2.3vw;
 	}
 
-	.scoresearch-description {
+	/* .scoresearch-description {
 		margin-bottom: 9vw;
-	}
+	} */
 
 	.dev-div {
 		position: absolute;
@@ -832,9 +839,9 @@ footer > a:hover:before {
     	font-size: .4vw;
 	}
 
-	.scoresearch-dev-div {
+	/* .scoresearch-dev-div {
 		margin-bottom: 3.2vw;
-	}
+	} */
 
 	.fab {
 		padding-right: 10px;
@@ -895,15 +902,15 @@ footer > a:hover:before {
 		height: 88%;
 		width: 25vw;
 		/*font-size: 1.5vw;
-	    /*margin-top: -3.5vw;
+	    /* /*margin-top: -3.5vw; */
 	}
 
-	.about-content-div {
+	/* .about-content-div { */
 		/*position: relative;
 		/*font-size: 2.5vw;*/
 		/*margin-bottom: 0rem;*/
 		/*margin-top: 7rem;*/
-	}
+	/* } */
 	.padding-div {
 		text-align: left;
 	}
@@ -925,6 +932,9 @@ footer > a:hover:before {
 	.up-arrow-div {
 		margin-top: 1rem;
 		margin-bottom: 6.5rem;
+	}
+	.composer-img {
+		margin-top: 23px;
 	}
 }
 
@@ -1064,17 +1074,6 @@ footer > a:hover:before {
 		margin-top: -2.5vw; 
 	}
 
-  /*.path-div {
-    height: 163vw;
-    margin: 0 auto;
-    margin-top: -2.45vw;
-    width: 5.5vw;
-    background-color: rgba(0,0,0,.45);
-    position: absolute;
-    left: 47.3%;
-    z-index: -1;
-  }*/
-
 	.section-title {
 		font-size: 3vw;
 	}
@@ -1095,6 +1094,10 @@ footer > a:hover:before {
 
 	.flex-positioner-div {
 		margin-top: 0;
+	}
+
+	.gitapiary-description-div, .composer-map-description-div {
+		top: -5px;
 	}
 
 	.logo-div {
@@ -1147,8 +1150,8 @@ footer > a:hover:before {
 		left: 0;
 	}
 
-	.scoresearch-dev-div {
-		top: 11.5vw;
+	.dev-div4 {
+		margin-top: -24px;
 	}
 
 	.fab {

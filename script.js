@@ -43,6 +43,5 @@ $('a[href*="#"]')
     else {
       $('.arrow').css('display', 'block');
     }
-  //250 is fade pixels
   });
 
