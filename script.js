@@ -35,10 +35,16 @@ $('a[href*="#"]')
     }
   });
 
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 80); 
     if ($('.arrow').css('opacity') == 0) {
       $('.arrow').css('display', 'none');
+    }
+    else if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      $('.up-arrow-div').css('display', 'block');
+    }
+    else if ($('.up-arrow-div').css('opacity') == 0) {
+      $('.up-arrow-div').css('display', 'none'); 
     }
     else {
       $('.arrow').css('display', 'block');
