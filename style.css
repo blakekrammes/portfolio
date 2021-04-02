@@ -28,15 +28,15 @@ a {
 	text-decoration: none;
 }
 
-.pärt {
+.pärt, .sc-link {
 	color: white;
 	border-bottom: 1px solid rgba(255,255,255,.1);
-	transition: .2s;
+	transition: .25s;
 }
 
-.pärt:hover {
+.pärt:hover, .sc-link:hover {
 	border-bottom: 1px solid rgba(255,255,255,.5);
-	transition: .2s;
+	transition: .25s;
 }
 
 .app {
@@ -171,20 +171,6 @@ li {
   transition: .2s;
 }
 
-.logo-div {
-	display: flex;
-	flex-direction: row;
-	/*padding-left: 10%;*/
-  	justify-content: space-around;
-  	/*margin: 0 2rem; */
-}
-.logo-div1 {
-	margin: 0 2rem;
-}
-.logo-div2, .logo-div3, .logo-div4 {
-	margin: 0 4.7rem;
-}
-
 .git-div, .heroku-div, .github-div {
 	margin-top: 15px;
 	/*width: 4vw;*/
@@ -228,28 +214,6 @@ li {
 .fab {
 	padding-right: 17px;
 	font-size: 8vw;
-}
-
-.logo-div-sub {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .65rem;
-    border: 1px solid rgba(255,255,255,.4);
-    border-radius: 2px;
-    width: 3.5rem;
-    height: 2.2rem;
-    padding: .2rem .4rem;
-    cursor: pointer;
-    /*margin-right: 1rem;*/
-    transition: .2s;
-}
-
-.logo-div-sub:hover {
-    background: rgba(0,0,0,.35);
-    border: 1px solid rgba(0,0,0,.7);
-    color: rgba(255,255,255,.0);
-    transition: .2s;
 }
 
 .link-button {
@@ -352,10 +316,6 @@ footer > a:hover:before {
 	/*background-position: cover;*/
 }
 
-.about-flex-positioner {
-	/*margin-bottom: -4em;*/
-}
-
 .kandinsky {
 	background: url('kandinsky.jpg');
 	position: absolute;
@@ -428,16 +388,12 @@ footer > a:hover:before {
 	/*font-size: 2.5vw;*/
 }
 
-.par-container {
-	/*margin-top: 2rem; */
-}
-
 .about-par {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	/*font-size: .8rem;*/
 	font-size: .6rem;
-	line-height: .8rem;
+	line-height: 1rem;
 	color: white;
 	/*margin-top: -.4rem;*/
 	/*margin-bottom: 1.6rem;*/
@@ -520,18 +476,6 @@ footer > a:hover:before {
 	body {
 		background-position: 1% 740%;
 	}
-	.logo-div-sub {
-		font-size: .85rem;
-		width: 6.4rem;
-    	height: 2.2rem;
-    	padding: 0 .6rem;
-	}
-	.logo-div1 {
-		margin: 0 1rem; 
-	}
-	.logo-div2, .logo-div3, .logo-div4 {
-		margin: 0 5.4rem; 
-	}
 	.profile-photo {
 		max-width: 6rem;
 		margin-top: 3.3rem;
@@ -581,18 +525,6 @@ footer > a:hover:before {
 		background-repeat: repeat-y;
 		background-position: 1% 145%;
 	}
-	.logo-div-sub {
-		font-size: 1.05rem;
-		width: 8rem;
-    	height: 2.6rem;
-    	padding: 0 .8rem;
-	}
-	.logo-div1 {
-		margin: 0 1rem; 
-	}
-	.logo-div2, .logo-div3, .logo-div4 {
-		margin: 0 6.2rem; 
-	}
 	.about-content-div {
 		/*margin-bottom: 5.8rem;*/
 	}
@@ -631,19 +563,6 @@ footer > a:hover:before {
 		background-repeat: repeat-y;
 		background-position: 0 120%;
 	}
-	.logo-div-sub {
-		font-size: .83rem;
-		width: 7.35rem;
-    	height: 2.6rem;
-    	padding: 0 .8rem;
-	}
-	.logo-div1 {
-		margin: 0 3rem; 
-	}
-	.logo-div2, .logo-div3, .logo-div4 {
-		margin: 0 8.8rem; 
-	}
-
 	.project-description-title {
 		font-size: 5vw;
 	}
@@ -730,22 +649,6 @@ footer > a:hover:before {
 	}
 	.gitapiary-flex-positioner {
 		margin-top: -28.5vw;
-	}
-
-	.logo-div {
-		display: flex;
-		flex-direction: row;
-		padding-left: 0;
-  		justify-content: initial;
-  		margin: 0; 
-	}
-
-	.logo-div2, .logo-div3, .logo-div4 {
-		margin: 0;
-	}
-
-	.logo-div-sub {
-		margin-right: 1rem;
 	}
 
 	.git-div, .heroku-div, .github-div {
@@ -1037,11 +940,6 @@ footer > a:hover:before {
 
 	.gitapiary-description-div, .composer-map-description-div {
 		top: -5px;
-	}
-
-	.logo-div {
-		display: flex;
-		flex-direction: row;
 	}
 
 	.git-div, .heroku-div, .github-div {
