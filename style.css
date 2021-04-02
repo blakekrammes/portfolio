@@ -225,14 +225,6 @@ li {
 	margin-bottom: 15%;
 }
 
-.dev-div {
-	position: absolute;
-	bottom: 6%;
-	left: 5%;
-  	right: 0;
-  	margin: 0 auto;
-}
-
 .fab {
 	padding-right: 17px;
 	font-size: 8vw;
@@ -794,21 +786,6 @@ footer > a:hover:before {
 		font-size: 2.3vw;
 	}
 
-	/* .scoresearch-description {
-		margin-bottom: 9vw;
-	} */
-
-	.dev-div {
-		position: absolute;
-		bottom: 0;
-		left: 30%;
-    	font-size: .4vw;
-	}
-
-	/* .scoresearch-dev-div {
-		margin-bottom: 3.2vw;
-	} */
-
 	.fab {
 		padding-right: 10px;
 		font-size: 4vw;
@@ -1106,23 +1083,9 @@ footer > a:hover:before {
 		right: 30%;
 	}
 
-	.dev-div {
-		position: absolute;
-		top: 13vw;
-		left: 0;
-	}
-
-	.dev-div4 {
-		margin-top: -24px;
-	}
-
 	.fab {
 		padding-right: 10px;
 		font-size: 3vw;
-	}
-
-	#about {
-		/* margin-bottom: 11.3rem; */
 	}
 
 	.profile-photo {
