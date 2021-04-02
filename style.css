@@ -43,17 +43,6 @@ a {
   margin-bottom: -80vw;
 }
 
-.arrow {
-  position: fixed;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.arrow-link {
-	border: none;
-}
-
 .home-header {
 	background: url('blaue.jpg');
 	background-repeat: repeat-y;
@@ -486,16 +475,6 @@ footer > a:hover:before {
   max-width: 4rem;
   height: auto;
 }
-#about {
-	/* margin-bottom: 1.6rem; */
-}
-.up-arrow-div {
-	position: fixed;
-	left: 50%;
-	bottom: 14%;
-	transform: translate(-50%, -50%);
-	display: none;
-}
 
 @media only screen and (min-width: 320px) {
 	.title {
@@ -537,12 +516,6 @@ footer > a:hover:before {
 		margin-top: 3.2rem;
 		margin-right: 5.8rem;
 	}
-	#about {
-		/* margin-bottom: 2.6rem; */
-	}
-	.up-arrow-div {
-		/* margin-top: 9rem; */
-	}
 }
 
 @media only screen and (min-width: 435px) {
@@ -578,12 +551,6 @@ footer > a:hover:before {
 	}
 	footer > a:before {
 		bottom: .8vw;
-	}
-	#about {
-		/* margin-bottom: 3rem; */
-	}
-	.up-arrow-div {
-		/* margin-top: 14rem; */
 	}
 	.final-links {
 		padding: 0 .75rem; 
@@ -927,12 +894,6 @@ footer > a:hover:before {
 	.about-par {
 		font-size: .7rem;
 		line-height: .9rem;
-	}
-	#about {
-		/* margin-bottom: 6.5rem; */
-	}
-	.up-arrow-div {
-		/* margin-top: 1rem; */
 	}
 	.composer-img {
 		margin-top: 23px;
